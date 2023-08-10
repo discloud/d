@@ -20,6 +20,9 @@
     margin-bottom: 100%;
     color: #57F287 !important;
   }
+  h1.zone-name-title {
+    display: none;
+  }
   </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css" integrity="sha512-Z/def5z5u2aR89OuzYcxmDJ0Bnd5V1cKqBEbvLOiUNWdg9PQeXVvXLI90SE4QOHGlfLqUnDNVAYyZi8UwUTmWQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -55,7 +58,12 @@
         <div class="row my-5">
           <div class="col-12 col-lg my-5"></div>
           <div class="col-12 col-lg my-5">
-            <p class="
+          <center><spam id="current_date"></spam></center>
+            <script>
+              let d = new Date();
+              document.getElementById("current_date").innerHTML = d.toUTCString();
+            </script>
+            <spam class="
                   btn btn-outline-light btn-sm
                   fw-bold
                   align-items-center
@@ -63,7 +71,7 @@
                   d-flex
                 " style="width: 100%; height: 100%">
               Ray ID: ::RAY_ID::
-            </p>
+            </spam>
           </div>
           <div class="col-12 col-lg my-5"></div>
         </div>
